@@ -5,8 +5,8 @@ export default function Header() {
   return (
     <div>
       <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h2">Home</Typography>
+        <Toolbar className="toolbar">
+          <Typography variant="h4">Home</Typography>
         </Toolbar>
       </AppBar>
     </div>
