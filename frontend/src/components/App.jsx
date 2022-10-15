@@ -5,17 +5,13 @@ import CustomRouter from '../routes'
 // import {Home} from './pages/home'
 
 function App() {
-  return <div>
+  return (<div>
     
     <Header/>
-    {/* <h1>Bodys</h1> */}
       <CustomRouter/>
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes> */}
     <Footer/>
 
-  </div>;
+  </div>);
 }
 
 export default App;
