@@ -15,7 +15,6 @@ function Footer() {
         sx={{ top: "auto", bottom: 0 }}
         className="bottomNavbar"
       >
-        <div className="container">
           <BottomNavigationAction
             showLabel
             sx={{ color: "whitesmoke" }}
@@ -40,7 +39,6 @@ function Footer() {
             label="Profile"
             icon={<AccountCircleIcon />}
           />
-        </div>
       </BottomNavigation>
     </Paper>
   );
