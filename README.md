@@ -3,7 +3,7 @@ WALK-E
 
 By Ajay Bukkaraya, Araf Ahmed Alam, Marzuk Mashrafe and Samet Sag  
 
-A mobile phone application that encourages walking through picture challenges
+A mobile phone application that encourages walking through outdoor activities.
 
 Technologies Used
 -----
