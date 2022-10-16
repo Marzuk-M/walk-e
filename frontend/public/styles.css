@@ -45,6 +45,12 @@ header {
   width: 70%;
 }
 
+.spread {
+  display: flex;
+  max-width: 700px;
+  justify-content: space-around;
+}
+
 .rankings {
   display: flex;
   justify-content: center;

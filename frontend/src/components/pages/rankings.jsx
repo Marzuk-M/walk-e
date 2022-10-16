@@ -19,7 +19,6 @@ const options = [
   "Global Rankings",
   "Rank by Streak",
   "Rank by Challenges",
-  "Rank by Streak",
 ];
 
 export default function Rankings() {

@@ -16,7 +16,7 @@ function Footer() {
         sx={{ top: "auto", bottom: 0 }}
         className="bottomNavbar"
       >
-        <div className="container">
+        <div className="container spread">
           <Link to="/"> 
             <BottomNavigationAction
               showLabel
