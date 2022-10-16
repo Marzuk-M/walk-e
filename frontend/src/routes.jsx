@@ -17,6 +17,8 @@ export default function CustomRouter(props) {
   })
 
   return (
+    <div className="full-page">
+      <div className="centered-section">
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/explore" element={<Explore />} />
@@ -29,5 +31,7 @@ export default function CustomRouter(props) {
       }
       <Route path="*" element={<Error404/>} />
     </Routes>
+    </div>
+    </div>
   );
 }
