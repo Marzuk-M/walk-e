@@ -9,8 +9,12 @@ Technologies Used
 -----
 
 - React
+- MaterialUI
 - HTML
 - CSS
+- Figma
+- Asana
+- GitHub
 
 Description
 -----  
