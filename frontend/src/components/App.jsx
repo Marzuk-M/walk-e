@@ -13,16 +13,16 @@ import { useState } from "react"
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
+  
   return (<div>
     {(isLoggedIn)? 
       <>
-        <Header/>
+        <Header title="TEST"/>
         <div className="mainContainer">
           <CustomRouter isLoggedIn={isLoggedIn} />
         </div>
         <Footer/>
       </> : <>
-        {/* <CustomRouter isLoggedIn={isLoggedIn} /> */}
         <Login/>
       </>
     }

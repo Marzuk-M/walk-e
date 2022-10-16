@@ -37,6 +37,11 @@ header {
   padding-top: 3%;
 }
 
+.edit-profile-text-field {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
 @media screen and (max-width: 700px) {
 .mainContainer {
     width: 100%;

@@ -6,7 +6,7 @@ export default function Header(props) {
     <div>
       <AppBar position="static">
           <div className="pageHeading container">
-                <Typography className="typography" variant="h4">Page Name</Typography>
+            <Typography className="typography" variant="h4">{props.title}</Typography>
           </div>
       </AppBar>
     </div>
