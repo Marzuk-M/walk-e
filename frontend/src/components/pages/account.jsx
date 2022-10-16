@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Account() {
   return (
-    <div className="mainContainer">
+    <div>
       Account
     </div>
   );

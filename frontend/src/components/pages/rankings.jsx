@@ -38,7 +38,7 @@ export default function Rankings() {
   };
 
   return (
-    <div className="mainContainer">
+    <div >
       {/* Making the dropdown buttons work as they should. */}
       <div className="btnGroupContainer">
         <ButtonGroup

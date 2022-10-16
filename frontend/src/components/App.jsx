@@ -1,19 +1,23 @@
-import Header from "./Header"
-import Footer from "./Footer"
-import Login from "./Login"
-import CustomRouter from '../routes'
+import Header from "./Header";
+import Footer from "./Footer";
+import Login from "./Login";
+import CustomRouter from "../routes";
 // import { Routes, Route, Link } from "react-router-dom";
 // import {Home} from './pages/home'
 
 function App() {
-  return (<div>
+  return (
+    <div>
+      {/* <Login/> */}
+      <Header />
 
-    {/* <Login/> */}
-    <Header/>
-      <CustomRouter/>
-    <Footer/>
+      <div className="mainContainer">
+        <CustomRouter />
+      </div>
 
-  </div>);
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
