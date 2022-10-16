@@ -10,7 +10,6 @@ import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText';
 import Brightness1 from '@mui/icons-material/Brightness1';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 
 import { styled } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
