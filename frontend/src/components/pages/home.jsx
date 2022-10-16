@@ -1,16 +1,25 @@
-import { 
-  Card, Grid, Box, Container, List, 
-  ListItem, ListItemAvatar, ListItemText, 
-  Divider, Avatar, Typography, ListItemIcon
+import {
+  Card,
+  Box,
+  Container,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+  Divider,
+  Avatar,
+  Typography,
+  ListItemIcon,
 } from "@mui/material";
 import React from "react";
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 const dto = {
-  title: "Brunch this weekend?",
-  body: "I'll be in your neighborhood doing errands this…",
-}
-const name = "John"
+  title: "Find 3 species of bird!",
+  body: "Try to find and capture photos of 3 distinct...",
+};
+const name = "Marzook";
+let completionsToday = 2;
 
 export default function Home() {
   const listItem = (data) => {
@@ -18,29 +27,40 @@ export default function Home() {
       <>
         <ListItem alignItems="flex-start">
           <ListItemAvatar>
-            <Avatar><AlternateEmailIcon/></Avatar>
+            <Avatar>
+              <AlternateEmailIcon />
+            </Avatar>
           </ListItemAvatar>
-          <ListItemText
-            primary={data.title}
-            secondary={data.body}
-          />
+          <ListItemText primary={data.title} secondary={data.body} />
         </ListItem>
         <Divider variant="inset" component="li" />
       </>
-    )
-  }
+    );
+  };
 
   return (
     <Container component="main" maxWidth="xs">
-      <Card variant="elevation" sx={{ width: '100%', height: '7em', marginTop: '1em' }}>
-        <Typography variant="h3" sx={{ p: 3 }}>
+      <Box>
+        <Typography variant="h5" sx={{ textAlign: "left" }}>
           Hello, {name}!
         </Typography>
-      </Card>
-      <Card variant="elevation" sx={{ width: '100%', marginTop: '1em', maxHeight: "calc(100% - 15em)", overflowY: 'auto' }}>
-        <List>
-          {[1,2,3,4,5,6,7].map(() => listItem(dto))}
-        </List>
+        <Typography variant="p" sx={{ textAlign: "left" }}>
+          Challenges Completed Today: {completionsToday}
+        </Typography>
+        <Typography variant="h4" sx={{ textAlign: "center", paddingTop:"1rem" }}>
+          Today's Challenges
+        </Typography>
+      </Box>
+      <Card
+        variant="elevation"
+        sx={{
+          width: "100%",
+          marginTop: "1em",
+          maxHeight: "calc(100% - 15em)",
+          overflowY: "auto",
+        }}
+      >
+        <List>{[1, 2, 3, 4, 5].map(() => listItem(dto))}</List>
       </Card>
     </Container>
   );
