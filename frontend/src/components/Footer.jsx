@@ -4,6 +4,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import ExploreIcon from "@mui/icons-material/Explore";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -16,30 +17,38 @@ function Footer() {
         className="bottomNavbar"
       >
         <div className="container">
-          <BottomNavigationAction
-            showLabel
-            sx={{ color: "whitesmoke" }}
-            label="Home"
-            icon={<HomeIcon />}
-          />
-          <BottomNavigationAction
-            showLabel
-            sx={{ color: "whitesmoke" }}
-            label="Explore"
-            icon={<ExploreIcon />}
-          />
-          <BottomNavigationAction
-            showLabel
-            sx={{ color: "whitesmoke" }}
-            label="Rankings"
-            icon={<LeaderboardIcon />}
-          />
-          <BottomNavigationAction
-            showLabel
-            sx={{ color: "whitesmoke" }}
-            label="Profile"
-            icon={<AccountCircleIcon />}
-          />
+          <Link to="/"> 
+            <BottomNavigationAction
+              showLabel
+              sx={{ color: "whitesmoke" }}
+              label="Home"
+              icon={<HomeIcon />}
+            />
+          </Link>
+          <Link to="/explore">
+            <BottomNavigationAction
+              showLabel
+              sx={{ color: "whitesmoke" }}
+              label="Explore"
+              icon={<ExploreIcon />}
+            />
+          </Link>
+          <Link to="rankings">
+            <BottomNavigationAction
+              showLabel
+              sx={{ color: "whitesmoke" }}
+              label="Rankings"
+              icon={<LeaderboardIcon />}
+            />
+          </Link>
+          <Link to="account">
+            <BottomNavigationAction
+              showLabel
+              sx={{ color: "whitesmoke" }}
+              label="Profile"
+              icon={<AccountCircleIcon />}
+            />
+          </Link>
         </div>
       </BottomNavigation>
     </Paper>
