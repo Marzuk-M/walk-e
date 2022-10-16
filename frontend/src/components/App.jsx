@@ -10,7 +10,9 @@ function App() {
     {(isLoggedIn)? 
       <>
         <Header/>
-        <CustomRouter isLoggedIn={isLoggedIn} />
+        <div className="mainContainer">
+          <CustomRouter isLoggedIn={isLoggedIn} />
+        </div>
         <Footer/>
       </> : <>
         {/* <CustomRouter isLoggedIn={isLoggedIn} /> */}

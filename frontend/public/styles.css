@@ -1,13 +1,29 @@
 body {
   margin: 0;
+  background-color: rgb(211, 211, 211);
 }
 
 header {
   background-color: #2e2e2e !important;
 }
 
+.typography {
+  padding: 10px;
+}
+
 .bottomNavbar {
   background-color: #2e2e2e !important;
+}
+
+.mainContainer {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .container {
@@ -18,17 +34,27 @@ header {
 }
 
 .btnGroupContainer {
-  display: flex;
-  justify-content: center;
   padding-top: 3%;
 }
 
 @media screen and (max-width: 700px) {
-  .pageHeading {
-    text-align: center;
+.mainContainer {
+    width: 100%;
   }
 
   .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mainContainer {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mainContainer {
     width: 100%;
   }
 }
