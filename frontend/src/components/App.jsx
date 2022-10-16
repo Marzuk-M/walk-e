@@ -5,6 +5,10 @@ import Register from "./Register"
 import CustomRouter from '../routes'
 import Account from "./pages/account"
 import EditProfile from "./pages/editProfile"
+import Explore from "./pages/explore"
+
+// import { Routes, Route, Link } from "react-router-dom";
+// import {Home} from './pages/home'
 import { useState } from "react"
 
 function App() {
