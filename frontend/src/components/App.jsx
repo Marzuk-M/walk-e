@@ -1,9 +1,10 @@
 import Header from "./Header"
 import Footer from "./Footer"
 import Login from "./Login"
-import SignUp from "./Register"
+import Register from "./Register"
 import CustomRouter from '../routes'
 import Account from "./pages/account"
+import EditProfile from "./pages/editProfile"
 
 // import { Routes, Route, Link } from "react-router-dom";
 // import {Home} from './pages/home'

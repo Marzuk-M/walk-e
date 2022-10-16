@@ -6,6 +6,8 @@ import Account from "./components/pages/account";
 import Explore from "./components/pages/explore";
 import Home from "./components/pages/home";
 import Rankings from "./components/pages/rankings";
+import EditProfile from "./components/pages/editProfile";
+import Register from "./components/Register";
 
 
 
@@ -25,8 +27,12 @@ export default function CustomRouter(props) {
       {(props.isLoggedIn)? 
         <></> 
         : 
+        <> 
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        </>
       }
+      <Route path="/edit-profile" element={<EditProfile />} />
       <Route path="*" element={<Error404/>} />
     </Routes>
   );
