@@ -8,7 +8,13 @@ import Home from "./components/pages/home";
 import Rankings from "./components/pages/rankings";
 import EditProfile from "./components/pages/editProfile";
 import Register from "./components/Register";
-
+export const routeNameMap = new Map([
+  ['/', 'Home'],
+  ['/explore', 'Explore'],
+  ['/account', 'Profile'],
+  ['/edit-profile', 'Edit'],
+  ['/rankings', 'Rankings'],
+])
 
 
 export default function CustomRouter(props) {
