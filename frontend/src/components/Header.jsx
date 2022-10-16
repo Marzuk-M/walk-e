@@ -1,12 +1,12 @@
 import React from "react";
 import { AppBar, Typography } from "@mui/material";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div>
       <AppBar position="static">
-          <div className="pageHeading container">
-                <Typography variant="h4">Hello</Typography>
+          <div position="fixed" className="pageHeading container" align="left">
+                <Typography variant="h4" align="left">{props.title}</Typography>
           </div>
       </AppBar>
     </div>

@@ -7,9 +7,9 @@ import { Box } from "@mui/system";
 
 export default function Login() {
   return (
-    <div position="relative" justifyContent="center" align="center" margin-top="500px">
+    <div position="relative" justifyContent="center" margin-top="500px">
       <div>
-        <img align = "center" src={CorpMemph} alt = "logo" />
+        <img src={CorpMemph} alt = "logo" />
       </div>
      
       <Box   
