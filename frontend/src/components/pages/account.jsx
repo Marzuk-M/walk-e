@@ -12,8 +12,8 @@ import Brightness1 from '@mui/icons-material/Brightness1';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
-
 import { styled } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 
 const Demo = styled('div')(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -22,6 +22,7 @@ const Demo = styled('div')(({ theme }) => ({
 
 
 export default function Account() {
+  const navigate = useNavigate()
   const [dense, setDense] = React.useState(false);
   const [secondary, setSecondary] = React.useState(false);
   const today = 2
@@ -43,6 +44,7 @@ export default function Account() {
           fullWidth
           variant="contained"
           sx={{ mt: 1, mb: 2 }}
+          onClick={() => navigate('/edit-profile')}
         >
           Edit Profile
         </Button>

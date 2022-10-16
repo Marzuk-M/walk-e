@@ -28,8 +28,8 @@ export default function CustomRouter(props) {
         <></> 
         : 
         <> 
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </>
       }
       <Route path="/edit-profile" element={<EditProfile />} />
