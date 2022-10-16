@@ -178,10 +178,16 @@ const data = [
 ];
 
 // Creates 5 different users
-const userData = [1].map((num) => {
+let arr = [];
+for(let i = 0; i < 20; i++) {
+  arr.push(Math.floor(Math.random() * 100));  
+}
+
+
+const userData = arr.map((num) => {
   return {
-    id: num,
-    username: "Person#" + num,
+    id: num + 1,
+    username: "Human" + num,
     email: "person" + num + "@gmail.com",
     profilePicture: "images/idk.png",
     bio: "Hello",

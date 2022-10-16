@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Button,
   ButtonGroup,
@@ -50,7 +50,7 @@ export default function Rankings() {
     { field: "rank", headerName: "Rank", width: 80 },
     { field: "points", headerName: "Points", width: 80 },
     { field: "challenges", headerName: "Challenges", width: 80 },
-    { field: "Streak", headerName: "Streak", width: 80 },
+    { field: "streak", headerName: "Streak", width: 80 },
   ];
 
   const rows = userData.map((user) => ({
@@ -58,6 +58,8 @@ export default function Rankings() {
     username: user.username,
     rank: user.rank.global,
     points: user.challenges.points,
+    challenges: user.challenges.totalCompleted,
+    streak: user.challenges.streak,
   }));
 
   return (
