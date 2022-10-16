@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AppBar, Typography, Toolbar,  Button } from "@mui/material";
 import CorpMemph from '../Assets/corpmemph.svg';
 import { createTheme } from '@mui/material/styles'
 import { Box } from "@mui/system";
 
 
-export default function Login() {
+export default function Login(props) {
+  useEffect(() => {
+    if (props.isLoggedIn) console.log("dasda") 
+  }, [props.isLoggedIn])
+
   return (
     <div position="relative" justifyContent="center" align="center" margin-top="500px">
       <div>
