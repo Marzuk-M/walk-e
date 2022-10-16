@@ -18,10 +18,13 @@ header {
 .mainContainer {
   display: flex;
   width: 50%;
-  height: 100vh;
+  height: 90vh;
   justify-content: center;
   align-content: center;
+  
   margin: auto;
+  padding-top: 1.5rem;
+
   background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }

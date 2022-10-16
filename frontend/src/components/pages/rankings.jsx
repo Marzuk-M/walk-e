@@ -96,6 +96,9 @@ export default function Rankings() {
       </Popper>
 
       {/* Displaying the rankings! */}
+
+                
+
     </div>
   );
 }
