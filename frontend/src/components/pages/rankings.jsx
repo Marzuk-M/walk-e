@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   ButtonGroup,
@@ -8,12 +8,19 @@ import {
   Paper,
   Grow,
   ClickAwayListener,
+  Box,
 } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-// import userData from "../../data/userData";
+import userData from "../../data/userData";
 
-const options = ["Global Rankings", "Rank by Streak", "Rank by Idk", "idk"];
+const options = [
+  "Global Rankings",
+  "Rank by Streak",
+  "Rank by Challenges",
+  "Rank by Streak",
+];
 
 export default function Rankings() {
   const [open, setOpen] = React.useState(false);
@@ -37,8 +44,24 @@ export default function Rankings() {
     setOpen(false);
   };
 
+  const columns = [
+    { field: "id", headerName: "ID", width: 50 },
+    { field: "username", headerName: "Username", width: 90 },
+    { field: "rank", headerName: "Rank", width: 80 },
+    { field: "points", headerName: "Points", width: 80 },
+    { field: "challenges", headerName: "Challenges", width: 80 },
+    { field: "Streak", headerName: "Streak", width: 80 },
+  ];
+
+  const rows = userData.map((user) => ({
+    id: user.id,
+    username: user.username,
+    rank: user.rank.global,
+    points: user.challenges.points,
+  }));
+
   return (
-    <div >
+    <div className="rankingSection">
       {/* Making the dropdown buttons work as they should. */}
       <div className="btnGroupContainer">
         <ButtonGroup
@@ -46,7 +69,7 @@ export default function Rankings() {
           ref={anchorRef}
           aria-label="split button"
         >
-          <Button>{options[currentOption]}</Button>
+          <Button size="large">{options[currentOption]}</Button>
           <Button
             size="small"
             aria-controls={open ? "split-button-menu" : undefined}
@@ -95,7 +118,15 @@ export default function Rankings() {
         )}
       </Popper>
 
-      {/* Displaying the rankings! */}
+      <Box
+        className="rankings"
+      >
+        <DataGrid
+          columns={columns}
+          rows={rows}
+          hideFooter="true"
+        />
+      </Box>
     </div>
   );
 }
