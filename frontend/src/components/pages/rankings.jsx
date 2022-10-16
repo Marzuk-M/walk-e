@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import {
   Button,
   ButtonGroup,
@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-import userData from "../../data/userData";
+// import userData from "../../data/userData";
 
 const options = ["Global Rankings", "Rank by Streak", "Rank by Idk", "idk"];
 
@@ -38,7 +38,8 @@ export default function Rankings() {
   };
 
   return (
-    <div>
+    <div className="mainContainer">
+      {/* Making the dropdown buttons work as they should. */}
       <div className="btnGroupContainer">
         <ButtonGroup
           variant="contained"
@@ -59,7 +60,6 @@ export default function Rankings() {
         </ButtonGroup>
       </div>
 
-      {/* Making the dropdown buttons work as they should. */}
       <Popper
         sx={{
           zIndex: 1,
@@ -96,9 +96,6 @@ export default function Rankings() {
       </Popper>
 
       {/* Displaying the rankings! */}
-                    
-      
-
     </div>
   );
 }
