@@ -12,7 +12,6 @@ Technologies Used
 - CSS
 - JavaScript
 - Material UI
-- Netlify
 - Domain.com
 
 Description
